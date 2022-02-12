@@ -1,0 +1,34 @@
+
+
+:root {
+    --background : rgb(234, 242, 248);
+    --dark : rgb(158, 213, 248);
+    --light : rgb(248, 253, 255);
+    --shadow : 3px 3px 6px rgba(111, 111, 111, 0.3);
+    --title : 'Arvo', serif; 
+}
+
+body {
+    box-sizing : border-box;
+    font-family: 'Source Serif 4', sans-serif;
+    background: var(--light);
+    color : var(--dark);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+a {
+    color : var(--dark);
+    text-transform : capitalize;
+    text-decoration : none;
+    font-weight : bold;
+}
+
+a:hover {
+    font-size: larger;
+}
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> vietnam-introduce </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400&family=Syne+Tactile&display=swap"
+        rel="stylesheet">
+    <link href="pj4.css" rel="stylesheet">
+
+
+</head>
+
+<style>
+    body {
+        margin: 33px 66px;
+        line-height: 1.5;
+    }
+
+    .nav-bar ul {
+        list-style-type: none;
+        display: grid;
+        color: var(--dark);
+        grid-template-columns: repeat(9, 1fr);
+        grid-gap: 10px;
+
+
+    }
+
+    nav a {
+        font-family: var(--title);
+        padding: 15px;
+        font-size: 15px;
+        box-shadow: var(--shadow);
+        border-radius: 18px;
+        display: block;
+
+    }
+
+    nav a:hover {
+        background: var(--dark);
+        color: var(--light);
+    }
+
+    header {
+        background: url(https://images.pexels.com/photos/2796627/pexels-photo-2796627.jpeg?cs=srgb&dl=pexels-nguy%E1%BB%85n-anh-v%C5%A9-2796627.jpg&fm=jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 360px;
+        padding: 3rem;
+        color: var(--light);
+        font-size: 30px;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-gap: 30px;
+    }
+
+
+    .col {
+        background: var(--background);
+        box-shadow: var(--shadow);
+        text-align: center;
+        margin: 18px;
+
+    }
+
+
+    footer {
+        margin: 33px;
+        display: grid;
+        justify-items: center;
+    }
+
+    footer a {
+        background: var(--dark);
+        color: var(--light);
+        padding: 21px;
+    }
+
+
+    /* media queries */
+
+    @media screen and (max-width: 900px) {
+
+        .nav-bar {
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            margin: auto;
+        }
+
+        nav li {
+            grid-column: 1/-1;
+        }
+
+        header {
+            display: none;
+        }
+
+        a {
+            font-size: 24px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="nav-bar">
+            <ul>
+                <li> <a href="home.html"> home </a> </li>
+                <li> <a href="contact.html"> contact </a> </li>
+                <li><a href="service.html"> service </a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1> Have you ever been to Viet Nam ? </h1>
+        </header>
+
+        <section class="intro">
+            <div class="col">
+                <a href="#" title="Learn more about Viet Nam">
+                    <img src="..\img\Hoi-an-street-from-above.jpg" alt="hoi an street from above">
+                    <p class="text"> More info about Hoi An town </p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="halong.html" title="Learn more about Viet Nam">
+                    <img src="..\img\hl.jpeg" alt="ha long bay from above">
+                    <p class="text"> More info about Ha Long bay </p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="prj.html\test\halong.html" title="Learn more about Viet Nam">
+                    <img src="..\img\golden bridge.jpg" alt="golden bridge">
+                    <p class="text"> More info about Golden bridge </p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" title="Learn more about Viet Nam">
+                    <img src="..\img\kth.jpg" alt="Hue capital">
+                    <p class="text"> More info about Hue imperial city </p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" title="Learn more about Viet Nam">
+                    <img src="..\img\sl2.jpg" alt="Turtle Tower">
+                    <p class="text"> More info about Sword lake </p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" title="Learn more about Viet Nam">
+                    <img src="..\img\nt.jpg" alt="view in nha trang">
+                    <p class="text"> More info about Nha Trang </p>
+                </a>
+            </div>
+
+        </section>
+
+        <footer>
+            <a href="#"> Learn more about Viet Nam </a>
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
